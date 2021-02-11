@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		.pagina{
+			margin: 0px;
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.menu{
+			position: relative;
+			background-color: #3743AA;
+			width: 100%;
+			height: 10%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex-direction: row;
+		}
+		.opc{
+			position: relative;
+			width: 10%;
+			height: 100%;
+			background-color: #19237A;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border:0px black solid;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 20px;
+			font-family: roboto;
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+		}
+		.opc:hover{
+			background-color: #8B93DA;
+			font-size: 23px;
+			transition-delay: 0.2s;
+		}
+		#cadastrar{
+			position: relative;
+			width: 10%;
+			height: 100%;
+			background-color: #8B93DA;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border:0px black solid;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 23px;
+			font-family: roboto;
+			font-weight: bold;
+			color: white;
+		}
+		.titulo{
+			position: relative;
+			width: 55%;
+			height: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			font-family: roboto;
+			font-size: 24px;
+			font-weight: bold;
+			color:white;
+			margin-left: 30px;
+		}
+		.imagem{
+			width: 250px;
+			height: 60px;
+			margin-top: 2px;
+		}
+		.corpo{
+			position: relative;
+			height: auto;
+			width: 100%;
+			background-color: white;
+			display: flex;
+			align-items:  flex-start;
+			flex-wrap: wrap;
+		}
+		.nome{
+			margin-top: 50px;
+			margin-left: 30px;
+			height: 40px;
+			width: 350px;
+			font-family: roboto;
+			font-weight: bold;
+			border-top:none;
+			border-left:none;
+			border-right: none;
+			font-size: 18px;
+			outline: none;
+		}
+		.numero{
+			margin-top: 50px;
+			margin-left: 30px;
+			height: 40px;
+			width: 200px;
+			font-family: roboto;
+			font-weight: bold;
+			border-top:none;
+			border-left:none;
+			border-right: none;
+			font-size: 18px;
+			outline: none;
+		}
+		#turma{
+			width: 210px;
+			height: 40px;
+			margin-top: 50px;
+			margin-left: 30px;
+			border-top:none;
+			border-left:none;
+			border-right: none;
+			font-family: roboto;
+			font-weight: bold;
+			font-size: 18px;
+			outline: none;
+		}
+		.btn{
+			margin-left: 60px;
+			height: 40px;
+			width: 120px;
+			border: none;
+			background-color: #3743AA;
+			color: white;
+			font-family: roboto;
+			font-size: 17px;
+			font-weight: bold;
+			cursor: pointer;
+			border-radius: 7px;
+		}
+		.btn:hover{
+			font-size: 20px;
+			background-color: #19237A;
+			transition-delay: 0.2s;
+		}
+		.sair{
+			position: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 85px;
+			height: 75px;
+			background-color: #3743AA;
+			bottom:10px;
+			right:10px;
+			border-radius: 10px;
+			color: white;
+			font-size: 20px;
+			font-family: roboto;
+			font-weight: bold;
+			cursor: pointer;
+			text-decoration: none;
+		}
+		.sair:hover{
+			background-color:#19237A;
+			font-size: 25px;
+			transition-delay: 0.2s;
+		}
+	</style>
+</head>
+<body>
+	<div class="pagina">
+		<div class = "menu">
+			<img class = "imagem" src="logo.png">
+			<div class = "titulo">
+				Sistema de Gerencimento Escolar
+			</div>
+			<a href="cadastro.html" class = "opc">
+				<div>
+					Cadastrar
+				</div>
+			</a>
+			<a href="remover.html" class = "opc">
+				<div>
+					Remover
+				</div>
+			</a>
+			<a href="atualizar.html" class = "opc">
+				<div>
+					Atualizar
+				</div>
+			</a>
+			<a href="consultar.html" class = "opc">
+				<div>
+					Consultar
+				</div>
+			</a>
+			<a href="menu.html" class = "opc">
+				<div>
+					Menu
+				</div>
+			</a>
+		</div>
+		<div class="corpo">
+			<form>
+				<input type="text" name="nome" placeholder="Nome Completo" class = "nome">
+				<input type="text" name="matricula" placeholder="Matrícula" class="numero">
+				<select name="turma" id = "turma" placeholder = "Turma">
+					<option value="" disabled >Turma</option>
+					<option value="3info">1° Ano de Informática</option>
+					<option value="3info">2° Ano de Informática</option>
+					<option value="3info">3° Ano de Informática</option>
+					<option value="3info">1° Ano de Edificações</option>
+					<option value="3info">2° Ano de Edificações</option>
+					<option value="3info">3° Ano de Edificações</option>
+					<option value="3info">1° Ano de Meio Ambiente</option>
+					<option value="3info">2° Ano de Meio Ambiente</option>
+					<option value="3info">3° Ano de Meio Ambiente</option>
+					<option value="3info">1° Ano de Enfermagem</option>
+					<option value="3info">2° Ano de Enfermagem</option>
+					<option value="3info">3° Ano de Enfermagem</option>
+				</select>
+				<input type="text" name="rg" placeholder="RG" class="numero">
+				<input type="text" name="cpf" placeholder="CPF" class="numero">
+				<input type="text" name="pai" placeholder="Nome do Pai" class = "nome">
+				<input type="text" name="mae" placeholder="Nome da Mãe" class = "nome">
+				<input type="submit" name="btn" value="Cadastrar" class="btn">
+			</form>
+		</div>
+		<a href="login.html" class="sair">
+			<div >
+				Sair
+			</div>
+		</a>
+	</div>
+</body>
+</html>

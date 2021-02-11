@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		.pagina{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #3743AA;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+		}
+		.titulo{
+			margin-top: 40px;
+		}
+		.box{
+			position: relative;
+			background-color: white;
+			width: 350px;
+			height: 500px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			font-size: 15px;
+			font-family: roboto;
+		}
+		.campo{
+			font-weight: bold;
+			font-family: roboto;
+			font-size: 18px;
+			border-top: none;
+			border-left: none;
+			border-right:none;
+			height: 40px;
+			width: 300px;
+		}
+		.campo:focus{
+			outline: 0px;
+		}
+		.imagem{
+			width: 240px;
+			height: 100px;
+		}
+		.btn{
+			width: 100px;
+			height: 35px;
+			border:none;
+			background-color: #3743AA;
+			border-radius: 10px;
+			font-family: roboto;
+			font-weight: bold;
+			font-size: 20px;
+			color: white;		
+			cursor: pointer;
+		}
+		.btn:hover{
+			background-color:#8B93DA;
+			font-size: 25px;
+			transition-delay: 0.2s;
+		}
+	</style>
+</head>
+<body>
+	<div class = "pagina">
+		<div class = "box">
+			<img src="logo.png" class = "imagem">
+			<h1 class="titulo">Gerenciamento Escolar</h1>
+			<br>
+			<br>
+			<form action="menu.html" method="post">
+				<input type="text" name="matricula" class = "campo" placeholder="Usuário" required="">
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="password" name="matricula" class = "campo" placeholder="Senha" required="">
+				<br>
+				<br>
+				<br>
+				<br>
+				<center>				
+					<input type="submit" name="btn" class = "btn" value="Entrar">
+				</center>
+			</form>
+		</div>	
+	</div>	
+</body>
+</html>
