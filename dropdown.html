@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		.menu{
+			position: absolute;
+			display: flex;
+			margin: 10px;
+			font-family: pinup;
+			font-size: 15px;
+			border: 1px black solid;
+		}
+		.menu li {
+			position: relative;
+			margin-left: 20px;
+			display: flex;
+			text-align: center;
+			border-right:1px black solid;
+		}
+
+		.menu li a {
+			text-decoration: none;
+			color: black;
+		}
+		.menu li ul{
+			position: absolute;
+			display: none;
+			border: 1px black solid;
+		}
+		.menu li:hover ul, menu li over ul{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Sobre</a></li>
+		  		<li><a href="#">O que fazemos?</a>
+		         	<ul>
+		                  <li><a href="#">Web Design</a></li>
+		                  <li><a href="#">SEO</a></li>
+		                  <li><a href="#">Design</a></li>
+		       		</ul>
+				</li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

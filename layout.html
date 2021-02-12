@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pesquisa</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: pinup;
+			font-size: 12px;
+		}
+		.menu{
+			list-style: none;
+			border:1px black solid;
+			float: left;
+		}
+		.menu a{
+			text-decoration: none;
+		}
+		.menu li{
+			position: relative;
+			float: left;
+			border-right: 1px black solid;
+		}
+		.menu li ul{
+			position: absolute;
+			top: 25px;
+			left: 0;
+			display: none;
+		}
+		.menu li:hover ul, .menu li.over ul{
+			display:block;
+		}
+		.menu li ul li{
+border:1px solid #c0c0c0;
+display:block;
+width:150px;
+}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<a href=""><li>Home</li></a>
+			<a href=""><li>Sobre</li></a>
+			<a href=""><li>O que fazemos
+				<ul>
+					<a href=""><li>Web Design</li></a>
+					<a href=""><li>CEO</li></a>
+					<a href=""><li>Design</li></a>
+				</ul>
+			</li></a>
+			<a href=""><li>Links</li></a>
+			<a href=""><li>Contatos</li></a>
+		</ul>	
+	</nav>
+</body>
+</html>

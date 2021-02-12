@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submenu</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		.menu{
+			position: absolute;
+			display: flex;
+			flex-direction: row; 
+			list-style: none;
+			font-family: pinup;
+			font-family: 20px;
+			width: auto;
+			height: auto;
+			border: 1px black solid;
+		}
+		.menu li{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			border-right: 1px black solid;
+		}
+		.menu li ul li{
+			border: 1px black solid;
+			width: 200px;
+			margin-left: 0px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Sobre</a></li>
+		  		<li><a href="#">O que fazemos?</a>
+		         	<ul>
+		            	<li><a href="#">Web Design</a></li>
+		                <li><a href="#">SEO</a></li>
+		                <li><a href="#">Design</a></li>
+		       		</ul>
+				</li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
